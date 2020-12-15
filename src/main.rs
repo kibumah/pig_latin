@@ -18,6 +18,7 @@ fn main() {
                 translation.push(c);            // Push the vowel character to the 'translation' string
                 String::from("-hay")            // Set suffix = "-hay"
             }
+            #[allow(overlapping_patterns)]
             'a'..='z' | 'A'..='Z' => {          // If it's a consonant...
                 format!("-{}ay", c)             // Set suffix = "-{c}ay"
             }
